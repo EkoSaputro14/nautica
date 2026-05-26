@@ -64,11 +64,14 @@ Klik tombol di bawah
 
 1. Buat akun cloudflare
 2. Buat worker
-3. Copy kode dari `_worker.js` ke editor cloudflare worker
-4. (Optional) Masukkan link daftar proxy kalian ke dalam environemnt variable `PROXY_BANK_URL`
-5. (Optional) Masukkan link target reverse proxy ke environment variable `REVERSE_PROXY_TARGET`
-6. Deploy
-7. Buka `https://DOMAIN_WORKER_KALIAN/sub`
+3. Gunakan Bun `1.2.15` (samakan dengan environment Cloudflare Workers/CI)
+   - Jalankan instalasi dependency dengan `npx -y bun@1.2.15 install`
+   - Untuk verifikasi lockfile: `npx -y bun@1.2.15 install --frozen-lockfile`
+4. Copy kode dari `_worker.js` ke editor cloudflare worker
+5. (Optional) Masukkan link daftar proxy kalian ke dalam environemnt variable `PROXY_BANK_URL`
+6. (Optional) Masukkan link target reverse proxy ke environment variable `REVERSE_PROXY_TARGET`
+7. Deploy
+8. Buka `https://DOMAIN_WORKER_KALIAN/sub`
 
 - Contoh daftar proxy [proxyList.txt](https://raw.githubusercontent.com/dickymuliafiqri/Nautica/refs/heads/main/proxyList.txt)
 - Contoh reverse proxy [example.com](https://example.com)

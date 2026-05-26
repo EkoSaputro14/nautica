@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "license": "ISC",
   "type": "module",
+  "packageManager": "bun@1.2.15",
+  "engines": {
+    "bun": "1.2.15"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
